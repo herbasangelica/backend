@@ -38,7 +38,9 @@ class CarouselItemsController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return CarouselItems::findOrFail($id);
+
+        
     }
 
     /**
