@@ -26,5 +26,8 @@ Route::post('/carousel', [CarouselItemsController::class, 'store']);
 Route::put('/carousel/{id}', [CarouselItemsController::class, 'update']);
 Route::delete('/carousel/{id}', [CarouselItemsController::class, 'destroy']);
 
+// For User API
 Route::get('/user', [UserController::class, 'index']);
 Route::delete('/user/{id}', [UserController::class, 'destroy']);
+Route::get('/user/{id}', [UserController::class, 'show']);
+Route::post('/user', [UserController::class, 'store']);
